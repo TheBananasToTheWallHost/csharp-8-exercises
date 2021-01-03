@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ArrayOfCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Customer>
+    <Name>Bob</Name>
+    <CreditCard>5Uq5SGdcC/oBcBJCvG0kvjQg+DM43qQbXn9E1VEtWFRfOyOzGmyseBFDzMrH/u7H</CreditCard>
+    <Password>1ILic8q3Z/Ib1aX5+1cR07aXCY00hcpJPf/EiBA3NYw=</Password>
+  </Customer>
+  <Customer>
+    <Name>Jill</Name>
+    <CreditCard>ik2cApgp2OpNrJHsvag8bTsLbWPxR5kl0DVIvBSJ2oqR/9CYEM2x4+oLTG69H4+S</CreditCard>
+    <Password>PyCG6b1dZyv+QLqYxiE6NKdYGn0Xx1k0iSxQBGypIrw=</Password>
+  </Customer>
+  <Customer>
+    <Name>Orgo</Name>
+    <CreditCard>oY5DQQplQ5zpEEd3O6NdxO8Pasi678u14bYJzD75qzyo+EwVt/ws7dSwHV4h7BH1</CreditCard>
+    <Password>BnEqEhYD8qkfWvsf8oUek8jukZqyYX8+kS1iYcGGqy8=</Password>
+  </Customer>
+</ArrayOfCustomer>

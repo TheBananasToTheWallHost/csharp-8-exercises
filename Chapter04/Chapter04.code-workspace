@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "WritingFunctions"
+		},
+		{
+			"path": "Debugging"
+		},
+		{
+			"path": "Dumping"
+		},
+		{
+			"path": "Instrumenting"
+		},
+		{
+			"path": "CalculatorLib"
+		},
+		{
+			"path": "CalculatorLibUnitTests"
+		},
+		{
+			"path": "Exercise01"
+		},
+		{
+			"path": "Exercise01Tests"
+		}
+	],
+	"settings": {}
+}

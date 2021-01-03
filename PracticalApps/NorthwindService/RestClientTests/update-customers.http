@@ -1,0 +1,18 @@
+PUT https://localhost:5001/api/customers/vaffe HTTP/1.1
+Content-Type: application/json
+Content-Length: 347
+
+{
+    "customerID":"VAFFE",
+    "companyName":"The Best Vaffeljernet",
+    "contactName":"Palle Ibsen II",
+    "contactTitle":"Sales Manager",
+    "address":"Smagsloget 45",
+    "city":"Århus",
+    "region":null,
+    "postalCode":"8200",
+    "country":"Denmark",
+    "phone":"86 21 32 43",
+    "fax":"86 22 33 44",
+    "orders":null
+}

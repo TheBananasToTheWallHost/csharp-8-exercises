@@ -1,0 +1,62 @@
+@page
+@model NorthwindWeb.Pages.CustomerDetailsModel
+@using Packt.Shared
+
+<div class="row">
+    @if(@Model.Customer == null){
+        <div class="jumbotron" style="width: 100%;">
+            <h1 class="display-2">Customer</h1>
+            <p class="lead">No customer found</p>
+        </div>
+    }
+    else{
+        <div>
+            <h1>@Model.Customer.CompanyName</h1>
+            <p>
+                <dl>
+                    <dt>Contact Information</dt><dd>@Model.Customer.ContactTitle @Model.Customer.ContactName</dd>
+                    <dt>Address</dt><dd>@Model.Customer.Address</dd>
+                    <dt>City</dt><dd>@Model.Customer.City</dd>
+                    <dt>Region</dt><dd>@Model.Customer.Region</dd>
+                    <dt>Postal Code</dt><dd>@Model.Customer.PostalCode</dd>
+                    <dt>Country</dt><dd>@Model.Customer.Country</dd>
+                    <dt>Phone</dt><dd>@Model.Customer.Phone</dd>
+                    <dt>Fax</dt><dd>@Model.Customer.Fax</dd>
+                </dl>
+                <table class="table">
+                    <thead class="thead-inverse">
+                        <th>Order ID</th> <th>Order Date</th> <th>Order Details</th>
+                    </thead>
+                    <tbody>
+                        @foreach (Order order in Model.Customer.Orders)
+                        {
+                            <tr>
+                                <td>@order.OrderID</td>
+                                <td>@order.OrderDate.Value.ToString("MMMM d, yyyy")</td>
+                                <td>
+                                    <table class="table">
+                                        <thead>
+                                            <th>Product</th> <th>Quantity</th> <th>Unit Price</th> <th>Total Cost</th>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (OrderDetail orderDetail in order.OrderDetails)
+                                            {
+                                                <tr>
+                                                <td>@orderDetail.Product.ProductName</td>
+                                                <td>@orderDetail.Quantity</td>
+                                                <td>@orderDetail.UnitPrice.ToString("c")</td>
+                                                <td>@((orderDetail.UnitPrice * orderDetail.Quantity).ToString("c"))</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            <p>
+        </div>
+
+    }
+</div>

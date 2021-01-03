@@ -1,0 +1,39 @@
+@model IEnumerable<Packt.Shared.Customer>
+<h2>@ViewData["Title"]</h2>
+<div class="jumbotron" style="margin-top: 48px; margin-bottom: 48px">
+    <form asp-controller="Home" asp-action="Customers" method="GET">
+        <input type="text" name="country" placeholder="Enter a country"/>
+        <input type="submit"/>
+    </form>
+</div>
+<div>
+<table class="table">
+    <tr>
+        <th>Company Name</th>
+        <th>Contact Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var customer in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(item => customer.CompanyName)</td>
+            <td>@Html.DisplayFor(item => customer.ContactName)</td>
+            <td>
+                @Html.DisplayFor(item => customer.Address)
+                @Html.DisplayFor(item => customer.City)
+                @Html.DisplayFor(item => customer.Region)  
+                @Html.DisplayFor(item => customer.Country)
+                @Html.DisplayFor(item => customer.PostalCode)
+
+            </td>
+            <td>@Html.DisplayFor(item => customer.Phone)</td>
+            <td>
+                <a asp-action="DeleteCustomer" asp-route-id="@customer.CustomerID" asp-route-country="@ViewData["Country"]">Delete</a>
+                <a asp-action="UpdateCustomer">Update</a>
+            </td>
+        </tr>
+    }
+</table>
+</div>

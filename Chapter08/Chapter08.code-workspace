@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "WorkingWithText"
+		},
+		{
+			"path": "WorkingWithSpans"
+		},
+		{
+			"path": "WorkingWithNetworkResources"
+		},
+		{
+			"path": "WorkingWithReflection"
+		},
+		{
+			"path": "Exercise02"
+		},
+		{
+			"path": "Exercise03"
+		},
+		{
+			"path": "Exercise03App"
+		},
+		{
+			"path": "Exercise03Tests"
+		}
+	],
+	"settings": {}
+}

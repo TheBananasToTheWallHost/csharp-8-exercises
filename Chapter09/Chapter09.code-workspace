@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "WorkingWithStreams"
+		},
+		{
+			"path": "WorkingWithEncodings"
+		},
+		{
+			"path": "WorkingWithSerialization"
+		},
+		{
+			"path": "Exercise02"
+		}
+	],
+	"settings": {}
+}

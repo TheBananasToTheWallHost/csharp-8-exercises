@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "EncryptionApp"
+		},
+		{
+			"path": "CryptographyLib"
+		},
+		{
+			"path": "SecureApp"
+		},
+		{
+			"path": "Exercise02"
+		}
+	],
+	"settings": {}
+}

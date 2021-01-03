@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "NorthwindContextLib"
+		},
+		{
+			"path": "NorthwindEntitiesLib"
+		},
+		{
+			"path": "Scaffolding"
+		},
+		{
+			"path": "NorthwindWeb"
+		},
+		{
+			"path": "NorthwindEmployees"
+		},
+		{
+			"path": "NorthwindMvc"
+		},
+		{
+			"path": "NorthwindService"
+		}
+	],
+	"settings": {}
+}
